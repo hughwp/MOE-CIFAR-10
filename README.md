@@ -8,7 +8,7 @@ The model consists of four main components that work together to create an adapt
 
 ### Architecture Diagram
 
-![Mixture-of-Experts Architecture](image3.png)
+![Mixture-of-Experts Architecture](model.png)
 
 The diagram illustrates the complete data flow:
 - Input **x** (H×W×C) is processed by K parallel convolutional experts
@@ -105,13 +105,18 @@ These hyperparameters were selected based on their performance impact, with K an
 
 **Training vs Test Accuracy**
 
-![Training vs Test Accuracy](image1.png)
+![Training vs Test Accuracy](training_over_test.png)
 
 The graph shows close similarity between training and test accuracy throughout training, with a slight divergence after epoch 40 indicating minor overfitting. Both curves plateau around 86-90% accuracy.
 
-**Test Accuracy Over Time**
+**Test Accuracy Over Epochs**
 
-![Test Accuracy](image2.png)
+![Test Accuracy](test_over_epochs.png)
 
 Test accuracy shows steady improvement from ~50% to ~86%, with most gains occurring in the first 40 epochs before stabilising.
+
+
+**Final Thoughts and Reflections**
+
+Honestly, I wish I'd worked more on this to push it over 90%. However, issues like time and the large cost of computer credits were building up. I do think this is a really cool archiecture and I will work on this more when I have more time!
 
